@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+   <link rel="stylesheet" href="../component/login.css">
+  </head>
+  <body>
+      <form id="loginForm">
+        <h2>กรุณาเข้าสุ่ระบบ</h2>
+
+        <div >
+          <label>ชื่อ</label>
+          <input type="text" id="username" required>
+        </div>
+
+        <div >
+          <label>รหัสผ่าน</label>
+          <input type="password" required>
+        </div>
+          
+        <button type="submit">เข้าสุ่ระบบ</button>
+      </form>
+<script>
+  document.getElementById("loginForm").addEventListener("submit", function (e) {
+    e.preventDefault()
+
+    const username = document.getElementById("username").value
+
+    // save login info
+    localStorage.setItem("isLoggedIn", "true")
+    localStorage.setItem("username", username)
+
+    // go to dashboard
+    window.location.href = "main.html"
+  })
+</script>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+@font-face{
+  font-family:"niga";
+   src: url('../font/Prompt-Regular.ttf') format('truetype');
+}
+
+* {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:niga;
+}
+
+body{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+}
+
+form {
+  background-color: #FFFF;
+  padding: 30px 35px;
+  width: 320px;
+  border-radius: 12px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  justify-content: center;
+  align-items: center;
+}
+
+form h2{
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+  
+}
+form div{
+  margin-bottom: 18px;
+  justify-content: center;
+  align-items: center;
+}
+label{
+  display: block;
+  margin-bottom: 6px;
+  font-size: 12px;
+  color: #555;
+
+}
+input{
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 14px;
+  border-radius: 8px;
+  outline: none;
+  transition: 1s;
+
+}
+input:focus{
+ box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.2 );
+
+}
+
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: #000000;
+  color: white;
+  font-size: 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 19px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button:hover {
+  background: #ffffff;
+  color:#000000;
+}
+@media(max-width:800px){
+  from{
+    width: 100px;
+  }
+  
+}
+
